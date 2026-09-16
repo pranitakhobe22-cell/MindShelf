@@ -1,0 +1,7 @@
+{
+  "scm.diffDecorations": "all",
+  "scm.diffDecorationsGutterAction": "diff",
+  "scm.diffDecorationsGutterWidth": 3,
+  "git.decorations.enabled": true,
+  "git.enabled": true
+}
