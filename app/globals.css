@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1c1917;
+  --card-bg: #ffffff;
+  --card-border: #e7e5e4;
+  
+  /* Authentic Academic Palette (Oxford / Harvard Crimson & Antique Gold) */
+  --academic-crimson: #881337;
+  --academic-crimson-dark: #700f2b;
+  --academic-crimson-deep: #4c0519;
+  --academic-burgundy: #9f1239;
+  --academic-gold: #b45309;
+  --academic-gold-light: #fef3c7;
+  --academic-forest: #166534;
+  --academic-paper: #ffffff;
+  --academic-border: #e7e5e4;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  color: #1c1917;
+  font-family: var(--font-academic-sans), 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Scholarly Headings & Editorial Typography */
+h1, h2, h3, .font-serif, .font-academic {
+  font-family: var(--font-academic-serif), 'Newsreader', 'Lora', Georgia, serif;
+}
+
+.font-sans {
+  font-family: var(--font-academic-sans), 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Academic Paper Cards */
+.paper-card {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  box-shadow: 0 1px 3px rgba(28, 25, 23, 0.03), 0 6px 18px -4px rgba(28, 25, 23, 0.04);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.paper-card:hover {
+  border-color: #d6d3d1;
+  box-shadow: 0 4px 14px rgba(28, 25, 23, 0.05), 0 14px 30px -6px rgba(28, 25, 23, 0.04);
+  transform: translateY(-1.5px);
+}
+
+/* Academic Action Buttons (Oxford Crimson / Burgundy) */
+.btn-primary, .btn-academic {
+  background: linear-gradient(135deg, #881337 0%, #700f2b 100%);
+  color: #ffffff;
+  border: 1px solid #700f2b;
+  box-shadow: 0 2px 8px rgba(136, 19, 55, 0.22);
+  transition: all 0.18s ease;
+}
+
+.btn-primary:hover, .btn-academic:hover {
+  background: linear-gradient(135deg, #700f2b 0%, #4c0519 100%);
+  box-shadow: 0 4px 14px rgba(136, 19, 55, 0.32);
+  transform: translateY(-1px);
+}
+
+/* Exam / Practice Quiz Button (Ivy Emerald) */
+.btn-emerald {
+  background: linear-gradient(135deg, #166534 0%, #14532d 100%);
+  color: #ffffff;
+  border: 1px solid #14532d;
+  box-shadow: 0 2px 8px rgba(22, 101, 52, 0.22);
+  transition: all 0.18s ease;
+}
+
+.btn-emerald:hover {
+  background: linear-gradient(135deg, #14532d 0%, #052e16 100%);
+  box-shadow: 0 4px 14px rgba(22, 101, 52, 0.32);
+  transform: translateY(-1px);
+}
+
+/* Revision Cheat Sheet Button (Antique Gold / Amber) */
+.btn-amber {
+  background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+  color: #ffffff;
+  border: 1px solid #92400e;
+  box-shadow: 0 2px 8px rgba(180, 83, 9, 0.22);
+  transition: all 0.18s ease;
+}
+
+.btn-amber:hover {
+  background: linear-gradient(135deg, #b45309 0%, #78350f 100%);
+  box-shadow: 0 4px 14px rgba(180, 83, 9, 0.32);
+  transform: translateY(-1px);
+}
+
+/* Socratic AI Concept Button (Royal Plum / Violet) */
+.btn-purple {
+  background: linear-gradient(135deg, #7e22ce 0%, #581c87 100%);
+  color: #ffffff;
+  border: 1px solid #581c87;
+  box-shadow: 0 2px 8px rgba(126, 34, 206, 0.22);
+  transition: all 0.18s ease;
+}
+
+.btn-purple:hover {
+  background: linear-gradient(135deg, #6b21a8 0%, #3b0764 100%);
+  box-shadow: 0 4px 14px rgba(126, 34, 206, 0.32);
+  transform: translateY(-1px);
+}
+
+.btn-academic-secondary {
+  background: #ffffff;
+  color: #1c1917;
+  border: 1px solid #e7e5e4;
+  box-shadow: 0 1px 3px rgba(28, 25, 23, 0.04);
+  transition: all 0.18s ease;
+}
+
+.btn-academic-secondary:hover {
+  background: #fafaf9;
+  border-color: #881337;
+  color: #881337;
+  transform: translateY(-1px);
+}
+
+/* Custom Academic Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6d3cc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a29e;
+}
+
+/* Academic Editorial Markdown */
+.prose-academic {
+  color: #292524;
+  line-height: 1.75;
+  font-size: 0.94rem;
+}
+
+.prose-academic h1, .prose-academic h2, .prose-academic h3, .prose-academic h4 {
+  font-family: 'Newsreader', Georgia, serif;
+  color: #1c1917;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-top: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.prose-academic h1 { font-size: 1.4rem; }
+.prose-academic h2 { font-size: 1.2rem; }
+.prose-academic h3 { font-size: 1.05rem; }
+
+.prose-academic p {
+  margin-bottom: 0.9em;
+}
+
+.prose-academic ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+  margin-bottom: 0.9em;
+}
+
+.prose-academic ol {
+  list-style-type: decimal;
+  padding-left: 1.4rem;
+  margin-bottom: 0.9em;
+}
+
+.prose-academic li {
+  margin-bottom: 0.3em;
+}
+
+.prose-academic pre {
+  background: #1c1917;
+  color: #fcfbf9;
+  border-radius: 10px;
+  padding: 1.1rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.84rem;
+  border: 1px solid #292524;
+}
+
+.prose-academic code {
+  background: #f4f2eb;
+  color: #881337;
+  border: 1px solid #e7e5e0;
+  padding: 0.15rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.86em;
+  font-weight: 600;
+}
+
+.prose-academic pre code {
+  background: transparent;
+  color: #fcfbf9;
+  border: none;
+  padding: 0;
+}
+
+.prose-academic blockquote {
+  border-left: 3px solid #881337;
+  background: #fdf8f6;
+  border-radius: 0 8px 8px 0;
+  padding: 0.75rem 1.1rem;
+  color: #700f2b;
+  margin: 1rem 0;
+  font-style: normal;
+}
